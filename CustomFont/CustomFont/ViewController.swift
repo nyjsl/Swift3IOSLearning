@@ -28,7 +28,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
-
+//        why btn.frame.size.width = 1000 here
+//        because of autoLayout ???
         btn.layer.cornerRadius = 75
      
     

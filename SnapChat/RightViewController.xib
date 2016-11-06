@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RightViewController" customModule="SnapChat" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="uiL-F5-kbN" id="30W-EV-P5J"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uiL-F5-kbN">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="Lwn-EP-zfm"/>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Lwn-EP-zfm" secondAttribute="bottom" id="8VS-ae-go0"/>
+                <constraint firstAttribute="trailing" secondItem="Lwn-EP-zfm" secondAttribute="trailing" id="FNM-dy-hYT"/>
+                <constraint firstItem="Lwn-EP-zfm" firstAttribute="leading" secondItem="uiL-F5-kbN" secondAttribute="leading" id="GxU-S0-iah"/>
+                <constraint firstItem="Lwn-EP-zfm" firstAttribute="top" secondItem="uiL-F5-kbN" secondAttribute="top" id="Sgh-Tv-3hy"/>
+            </constraints>
+            <point key="canvasLocation" x="-9.5" y="160.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="right" width="320" height="568"/>
+    </resources>
+</document>

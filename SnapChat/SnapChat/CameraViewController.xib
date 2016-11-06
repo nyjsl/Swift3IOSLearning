@@ -8,7 +8,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraViewController" customModule="SnapChat" customModuleProvider="target">
             <connections>
-                <outlet property="preViewImageView" destination="mq7-2H-Jba" id="LdD-iH-9y3"/>
+                <outlet property="cameraView" destination="8TN-jj-FDL" id="Nl1-rt-wgb"/>
+                <outlet property="preViewImageView" destination="mq7-2H-Jba" id="afI-xS-QSD"/>
                 <outlet property="view" destination="8TN-jj-FDL" id="44L-j2-0TS"/>
             </connections>
         </placeholder>

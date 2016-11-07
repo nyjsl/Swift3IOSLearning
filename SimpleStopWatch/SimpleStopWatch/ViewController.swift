@@ -36,8 +36,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var pauseBtn: UIButton!
     
-
-    
     fileprivate var currentCount:Double = 0.0{
         didSet{
             timeLabel.text = "\(String(format: "%.1f", currentCount) )"
@@ -56,9 +54,12 @@ class ViewController: UIViewController {
         }
     }
    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-            self.view.backgroundColor = UIColor.black
+        self.view.backgroundColor = UIColor.black
         currentCount = 0.0
         
         pauseBtn.addTarget(self, action: #selector(ViewController.pauseBtnAction), for: .touchUpInside)

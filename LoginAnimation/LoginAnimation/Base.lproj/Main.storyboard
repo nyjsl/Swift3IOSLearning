@@ -104,6 +104,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="24S-RY-PPC" eventType="touchUpInside" id="rik-Da-J4V"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.2539966656" green="0.72624524109999999" blue="0.3078770958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -121,7 +124,7 @@
                     <connections>
                         <outlet property="loginBtn" destination="SRM-te-Sjo" id="B3r-WZ-f6C"/>
                         <outlet property="pwdTextField" destination="ABM-WV-8Me" id="hFz-Do-aDa"/>
-                        <outlet property="unTextField" destination="ABM-WV-8Me" id="XpH-zX-kDG"/>
+                        <outlet property="unTextField" destination="qZa-sf-Ff9" id="tns-gw-Lpp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8F-66-HQb" userLabel="First Responder" sceneMemberID="firstResponder"/>

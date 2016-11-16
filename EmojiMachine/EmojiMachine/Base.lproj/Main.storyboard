@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Emoji View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="EmojiViewController" customModule="EmojiMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hyperspace" translatesAutoresizingMaskIntoConstraints="NO" id="hXK-GQ-mnM"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXY-3g-WXp"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7z4-EM-pQE">
+                                <color key="backgroundColor" red="0.80187911519274291" green="0.97680455446243286" blue="0.2866827662480626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0QO-AH-FiO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bingo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nl-jC-w2S">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="6t4-pI-P1F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7z4-EM-pQE" firstAttribute="top" secondItem="pXY-3g-WXp" secondAttribute="bottom" constant="48" id="077-eo-Nsz"/>
+                            <constraint firstItem="hXK-GQ-mnM" firstAttribute="trailing" secondItem="pXY-3g-WXp" secondAttribute="trailing" id="237-sJ-7eo"/>
+                            <constraint firstItem="3Nl-jC-w2S" firstAttribute="centerX" secondItem="7z4-EM-pQE" secondAttribute="centerX" id="HBJ-Z6-xX5"/>
+                            <constraint firstItem="hXK-GQ-mnM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HEt-WW-zq4"/>
+                            <constraint firstItem="pXY-3g-WXp" firstAttribute="centerX" secondItem="7z4-EM-pQE" secondAttribute="centerX" id="HT8-Rc-vXu"/>
+                            <constraint firstAttribute="trailing" secondItem="hXK-GQ-mnM" secondAttribute="trailing" id="OZ5-I6-RZM"/>
+                            <constraint firstItem="hXK-GQ-mnM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QWp-na-hKK"/>
+                            <constraint firstItem="hXK-GQ-mnM" firstAttribute="centerY" secondItem="pXY-3g-WXp" secondAttribute="centerY" id="Qpf-8F-Ojq"/>
+                            <constraint firstItem="3Nl-jC-w2S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TuG-V3-8PQ"/>
+                            <constraint firstItem="7z4-EM-pQE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="99" id="Vq1-6u-AMp"/>
+                            <constraint firstItem="hXK-GQ-mnM" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="agO-vN-bQv"/>
+                            <constraint firstItem="3Nl-jC-w2S" firstAttribute="top" secondItem="7z4-EM-pQE" secondAttribute="bottom" constant="45" id="f60-sn-iON"/>
+                            <constraint firstItem="hXK-GQ-mnM" firstAttribute="leading" secondItem="pXY-3g-WXp" secondAttribute="leading" id="r8M-ds-02R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goBtn" destination="7z4-EM-pQE" id="2bJ-fo-NNN"/>
+                        <outlet property="pickerView" destination="pXY-3g-WXp" id="aKO-4h-Zgs"/>
+                        <outlet property="resultLabel" destination="3Nl-jC-w2S" id="iIX-Sy-wLI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hyperspace" width="621" height="1104"/>
+    </resources>
+</document>

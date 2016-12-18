@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		263B6C271E06249E00057998 /* RefreshContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263B6C261E06249E00057998 /* RefreshContents.xib */; };
+		263B6C2B1E0641C400057998 /* RefreshContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263B6C2A1E0641C400057998 /* RefreshContentView.swift */; };
 		26D86E8D1E015E2B007E4D06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D86E8C1E015E2B007E4D06 /* AppDelegate.swift */; };
 		26D86E8F1E015E2B007E4D06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D86E8E1E015E2B007E4D06 /* ViewController.swift */; };
 		26D86E921E015E2B007E4D06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D86E901E015E2B007E4D06 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		263B6C261E06249E00057998 /* RefreshContents.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshContents.xib; sourceTree = "<group>"; };
+		263B6C2A1E0641C400057998 /* RefreshContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshContentView.swift; sourceTree = "<group>"; };
 		26D86E891E015E2B007E4D06 /* CustomPullRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPullRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D86E8C1E015E2B007E4D06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26D86E8E1E015E2B007E4D06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 			children = (
 				26D86E8C1E015E2B007E4D06 /* AppDelegate.swift */,
 				26D86E8E1E015E2B007E4D06 /* ViewController.swift */,
+				263B6C261E06249E00057998 /* RefreshContents.xib */,
+				263B6C2A1E0641C400057998 /* RefreshContentView.swift */,
 				26D86E901E015E2B007E4D06 /* Main.storyboard */,
 				26D86E9E1E0163CB007E4D06 /* CellOneLabel.swift */,
 				26D86E931E015E2B007E4D06 /* Assets.xcassets */,
@@ -128,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26D86E971E015E2B007E4D06 /* LaunchScreen.storyboard in Resources */,
+				263B6C271E06249E00057998 /* RefreshContents.xib in Resources */,
 				26D86E941E015E2B007E4D06 /* Assets.xcassets in Resources */,
 				26D86E921E015E2B007E4D06 /* Main.storyboard in Resources */,
 			);
@@ -140,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263B6C2B1E0641C400057998 /* RefreshContentView.swift in Sources */,
 				26D86E8F1E015E2B007E4D06 /* ViewController.swift in Sources */,
 				26D86E9F1E0163CB007E4D06 /* CellOneLabel.swift in Sources */,
 				26D86E8D1E015E2B007E4D06 /* AppDelegate.swift in Sources */,
@@ -306,6 +314,7 @@
 				26D86E9D1E015E2B007E4D06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

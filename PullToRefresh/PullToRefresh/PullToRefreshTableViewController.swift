@@ -28,7 +28,8 @@ class PullToRefreshTableViewController: UITableViewController{
         tableView.rowHeight = UITableViewAutomaticDimension
         self.refreshControl = UIRefreshControl()
         self.refreshControl?.addTarget(self, action: #selector(PullToRefreshTableViewController.refresh), for: .valueChanged)
-        self.refreshControl?.tintColor = UIColor.black
+        self.refreshControl?.tintColor = UIColor.cyan
+        self.refreshControl?.backgroundColor = UIColor.gray
         refresh()
 
     }

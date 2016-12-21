@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellId" id="iBP-mU-I46" customClass="CustomCell" customModule="CollectionViewAnimation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="207"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="207"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Uz-Ea-5xx">
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="139"/>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gNw-ww-5Pz">
+                        <rect key="frame" x="0.0" y="139" width="340" height="68"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68" id="8cL-cL-AW8"/>
+                        </constraints>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eE-MY-E7z">
+                        <rect key="frame" x="10" y="10" width="14" height="24"/>
+                        <state key="normal" image="Back-icon"/>
+                        <connections>
+                            <action selector="backAction:" destination="iBP-mU-I46" eventType="touchUpInside" id="22Z-f9-L8Z"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3Uz-Ea-5xx" firstAttribute="leading" secondItem="iBP-mU-I46" secondAttribute="leading" id="2kX-rL-hwS"/>
+                <constraint firstItem="gNw-ww-5Pz" firstAttribute="top" secondItem="3Uz-Ea-5xx" secondAttribute="bottom" id="3zc-Ir-hRi"/>
+                <constraint firstAttribute="trailing" secondItem="3Uz-Ea-5xx" secondAttribute="trailing" id="4k0-fA-1xN"/>
+                <constraint firstAttribute="bottom" secondItem="gNw-ww-5Pz" secondAttribute="bottom" id="9Ou-U9-7v7"/>
+                <constraint firstItem="3Uz-Ea-5xx" firstAttribute="top" secondItem="iBP-mU-I46" secondAttribute="top" id="FbT-nc-vQF"/>
+                <constraint firstItem="3Uz-Ea-5xx" firstAttribute="leading" secondItem="iBP-mU-I46" secondAttribute="leading" id="Ogm-CM-iVz"/>
+                <constraint firstItem="gNw-ww-5Pz" firstAttribute="leading" secondItem="iBP-mU-I46" secondAttribute="leading" id="Rvr-l5-3Gr"/>
+                <constraint firstAttribute="trailing" secondItem="gNw-ww-5Pz" secondAttribute="trailing" id="aDc-aq-0U5"/>
+                <constraint firstItem="3Uz-Ea-5xx" firstAttribute="top" secondItem="iBP-mU-I46" secondAttribute="top" id="g80-OR-AFk"/>
+                <constraint firstAttribute="trailing" secondItem="3Uz-Ea-5xx" secondAttribute="trailing" id="jJj-OE-azI"/>
+                <constraint firstItem="9eE-MY-E7z" firstAttribute="top" secondItem="iBP-mU-I46" secondAttribute="top" constant="10" id="oOK-Tz-qiB"/>
+                <constraint firstItem="9eE-MY-E7z" firstAttribute="leading" secondItem="iBP-mU-I46" secondAttribute="leading" constant="10" id="waH-J0-iPF"/>
+            </constraints>
+            <size key="customSize" width="632" height="219"/>
+            <connections>
+                <outlet property="backBtn" destination="9eE-MY-E7z" id="9PV-Ky-e3d"/>
+                <outlet property="imgView" destination="3Uz-Ea-5xx" id="L6T-Lj-10o"/>
+                <outlet property="textView" destination="gNw-ww-5Pz" id="5hQ-P1-m3S"/>
+            </connections>
+            <point key="canvasLocation" x="398" y="-13.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Back-icon" width="14" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reveal Table View Controller-->
+        <scene sceneID="cPY-7Y-xOI">
+            <objects>
+                <tableViewController storyboardIdentifier="RevealTableViewController" id="WF3-ST-emr" customClass="RevealTableViewController" customModule="SlideOutMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mB1-Ch-gWh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellId" textLabel="3Dn-qA-lrh" style="IBUITableViewCellStyleDefault" id="DD1-L4-HJy">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DD1-L4-HJy" id="5IW-Lc-iV4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Dn-qA-lrh">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WF3-ST-emr" id="Ydy-YY-KBh"/>
+                            <outlet property="delegate" destination="WF3-ST-emr" id="VdJ-4t-Yjo"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0s1-Zi-NdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="21"/>
+        </scene>
+        <!--Article View Controller-->
+        <scene sceneID="Zb3-5X-kcy">
+            <objects>
+                <viewController storyboardIdentifier="ArticleVC" id="bmp-hw-6nD" customClass="ArticleViewController" customModule="SlideOutMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MLh-ND-DG5"/>
+                        <viewControllerLayoutGuide type="bottom" id="uUw-c2-lnj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YFd-SX-ZdV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="article" translatesAutoresizingMaskIntoConstraints="NO" id="6Ys-HD-WEU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Ys-HD-WEU" firstAttribute="leading" secondItem="YFd-SX-ZdV" secondAttribute="leading" id="fI4-7d-phG"/>
+                            <constraint firstAttribute="trailing" secondItem="6Ys-HD-WEU" secondAttribute="trailing" id="hTM-g0-qxs"/>
+                            <constraint firstItem="uUw-c2-lnj" firstAttribute="top" secondItem="6Ys-HD-WEU" secondAttribute="bottom" id="oIS-pF-IqC"/>
+                            <constraint firstItem="6Ys-HD-WEU" firstAttribute="centerY" secondItem="YFd-SX-ZdV" secondAttribute="centerY" id="yrM-9W-Nd4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ZG-6Z-Uie" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="24.7376311844078"/>
+        </scene>
+        <!--After View Controller-->
+        <scene sceneID="2Pp-ER-cLo">
+            <objects>
+                <viewController storyboardIdentifier="AfterVC" id="omm-BY-EXx" customClass="AfterViewController" customModule="SlideOutMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZTu-IS-Sj6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y84-Ao-zO0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MPV-Tp-bbM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="readlater" translatesAutoresizingMaskIntoConstraints="NO" id="sa7-uf-0id">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sa7-uf-0id" firstAttribute="top" secondItem="MPV-Tp-bbM" secondAttribute="top" id="6RC-XQ-vz5"/>
+                            <constraint firstItem="sa7-uf-0id" firstAttribute="leading" secondItem="MPV-Tp-bbM" secondAttribute="leading" id="DZI-tM-tCq"/>
+                            <constraint firstAttribute="trailing" secondItem="sa7-uf-0id" secondAttribute="trailing" id="Qc7-ff-MR4"/>
+                            <constraint firstItem="sa7-uf-0id" firstAttribute="bottom" secondItem="Y84-Ao-zO0" secondAttribute="top" id="Rzc-g2-5zx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9V-I7-z6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1330.4000000000001" y="14.842578710644679"/>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="Uu3-DR-Pin">
+            <objects>
+                <viewController storyboardIdentifier="FeedViewController" id="H7L-HU-IMG" customClass="FeedViewController" customModule="SlideOutMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8L7-Ng-tus"/>
+                        <viewControllerLayoutGuide type="bottom" id="f3J-38-A9w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gHr-5S-4N6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Feed" translatesAutoresizingMaskIntoConstraints="NO" id="bgl-o8-aBl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bgl-o8-aBl" firstAttribute="leading" secondItem="gHr-5S-4N6" secondAttribute="leading" id="99z-5n-rNq"/>
+                            <constraint firstItem="bgl-o8-aBl" firstAttribute="top" secondItem="gHr-5S-4N6" secondAttribute="top" id="NzV-qo-XNJ"/>
+                            <constraint firstItem="f3J-38-A9w" firstAttribute="top" secondItem="bgl-o8-aBl" secondAttribute="bottom" id="diC-ah-gUC"/>
+                            <constraint firstAttribute="trailing" secondItem="bgl-o8-aBl" secondAttribute="trailing" id="zaD-Su-gNL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4NM-5d-83y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-689" y="20"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Feed" width="375" height="667"/>
+        <image name="article" width="375" height="667"/>
+        <image name="readlater" width="375" height="667"/>
+    </resources>
+</document>

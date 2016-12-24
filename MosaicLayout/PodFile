@@ -1,0 +1,5 @@
+platform :ios, ‘8.0’ #(注明你的开发平台以及版本，'8.0'忽略不写即为最新版本)
+use_frameworks!
+target 'MosaicLayout' do
+    pod ‘FMMosaicLayout’
+end

@@ -19,17 +19,39 @@ class FriendTableTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTableViewAutoHeight();
+        
+        print("viewDidLoad")
                // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+       
     }
+    
     
     private func setUpTableViewAutoHeight(){
         self.tableView.estimatedRowHeight = 200
         self.tableView.rowHeight = UITableViewAutomaticDimension
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+
+        let visibleCells = self.tableView.visibleCells
+        visibleCells.forEach { (cell) in
+            cell.transform = CGAffineTransform(translationX: 0, y: self.tableView.bounds.size.height)
+        }
+        
+        for index in 0..<visibleCells.count {
+            UIView.animate(withDuration: 1, delay: 0.05*Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0.2, options: [.curveLinear], animations: {
+                visibleCells[index].transform = CGAffineTransform(translationX: 0, y: 0)
+            }, completion: nil)
+            
+        }
     }
     
     
@@ -57,7 +79,6 @@ class FriendTableTableViewController: UITableViewController {
         cell.friendModel = friendModels[indexPath.row]
         
         makeImageViewCircle(img: cell.userImg)
-        
         return cell
     }
     /*
